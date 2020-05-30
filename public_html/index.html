@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form validation</title>
+	<style>
+             {
+	box-sizing: border-box;
+}
+            body {
+	background-color: #9b59b6;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+		
+            .inputBox{border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+		
+		label{
+			font-size:20px ;
+			font-weight: bold;
+			align-items: center;
+			justify-items: center;
+		}
+		.Button{
+			
+	background-color: #8e44ad;
+	border: 2px solid #8e44ad;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+
+		}
+		.Button:hover{
+			cursor: pointer;
+		    background-color: rgb(99, 99, 228);
+		}
+                .container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+}
+.form {
+	padding: 30px 40px;	
+}
+
+		
+	</style>
+</head>
+<body>
+   
+        <div class="container">
+	<div class="header">
+		<h2>LOGIN</h2>
+	</div>
+            <form id="form" class="form"></form>
+
+<form name="myForm" action="#"   onsubmit="return validateForm()" method="post">
+<label for="Email">Email ID </label>
+<input type="email" name="Email" placeholder="a@gmail.com" class="inputBox" title="must enter a valid Email"></br>
+<label for="password">Password </label>
+<input type="password" name="Password"  placeholder="Password" id="pass" class="inputBox" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></br>
+
+<button class="Button" onclick="myFunction()">submit</button>
+</form>	<script type="text/javascript" src="form.js"></script>
+  
+
+</body>
+</html>
